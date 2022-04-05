@@ -1,0 +1,204 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-size: 16px;
+    font-weight:400; 
+    background: grey;
+}
+.contenedor{
+    position: relative;
+    left: 10em;
+    top: 2em;
+    display: grid;
+    width: 35rem;
+    height: 35rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    
+}
+.inicioDelTexto{
+    background: white;
+    color: hsl(218, 22%, 67%);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.inicioDelTexto strong{
+    font-size: 20px;
+    color: hsl(179, 62%, 43%);
+    position: relative;
+    bottom: 2em;
+}
+.inicioDelTexto p{
+    position: relative;
+    left: 2em;
+}
+.inicioDelTexto span{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    position: relative;
+    bottom: 1em;
+}
+.subscripcion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(201, 29%, 91%);
+    background:#2bb3b1 ;
+    border-bottom-left-radius:10px ;
+    line-height: 3em;
+}
+.subscripcion strong{
+    color: white;
+    position: relative;
+    bottom: 30px;
+}
+.subscripcion span{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+.subscripcion em{
+    color: hsl(196, 6%, 65%);
+    position: relative;
+    left: 1em;
+    
+}
+.subscripcion button{
+    position: relative;
+    top: 2em;
+    
+    width: 15em;
+    height: 3em;
+    background:hsl(71, 73%, 54%) ;
+    border-radius: 5px;
+
+}
+.nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(203, 25%, 86%);
+    background: #4abebd;
+    letter-spacing: 2px;
+    border-bottom-right-radius:10px ;
+}
+.nosotros strong {
+    position: relative;
+    bottom: 2em;
+    color: white;
+}
+
+@media screen and  (max-width: 375px){
+    body{
+        font-size: 16px;
+        font-weight:400; 
+        background: grey;
+    }
+    .contenedor{
+        position: relative;
+        left: 10em;
+        top: 2em;
+        display: grid;
+        width: 35rem;
+        height: 50rem;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto;
+        
+    }
+    .inicioDelTexto{
+        background: white;
+        color: hsl(218, 22%, 67%);
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        align-items: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+                
+    }
+    .inicioDelTexto strong{
+        font-size: 20px;
+        color: hsl(179, 62%, 43%);
+        position: relative;
+        bottom: 2em;
+    }
+    
+    .inicioDelTexto span{
+        color: hsl(71, 73%, 54%);
+        font-weight: 700;
+        position: relative;
+        bottom: 1em;
+    }
+    .subscripcion{
+        display: flex;
+        align-items: center;
+        color: hsl(204, 43%, 93%);
+        background:#2bb3b1 ;
+        line-height: 3em;
+    }
+    .subscripcion strong{
+        color: white;
+    }
+    .subscripcion p{
+        position: relative;
+        right: 9em;
+    }
+    .subscripcion span{
+        color: white;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .subscripcion em{
+        position: relative;
+        left: 1em;
+        
+    }
+    .subscripcion button{
+        position: relative;
+        top: 2em;
+        box-shadow: 0 5px 5px;
+        width: 15em;
+        height: 3em;
+        background:hsl(71, 73%, 54%) ;
+    }
+    .nosotros{
+        display: flex;
+        align-items: center;
+        position: relative;
+        color: hsl(204, 43%, 93%);
+        background: #4abebd;
+        letter-spacing:2px;
+        border-bottom-left-radius:10px ;
+        border-bottom-right-radius:10px ;
+    }
+    .nosotros p{
+        position: relative;
+        right: 8em;
+    }
+    .nosotros strong {
+        
+        color: white;
+    }
+}
+/*Bright Yellow: hsl(71, 73%, 54%) el del boton sig up
+Light Gray: hsl(204, 43%, 93%) las letras
+Grayish Blue: hsl(218, 22%, 67%) otras letras
+*/
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
